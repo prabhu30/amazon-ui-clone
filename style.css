@@ -5,11 +5,6 @@
     box-sizing: border-box;
 }
 
-/* TODO: Clear body styles later */
-/* body {
-    background-color: #f3f3f3;
-} */
-
 .flex {
     display: flex;
 }
@@ -231,9 +226,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    /* position: relative;
-    top: 250px; */
 }
 
 .hero-section .redirect-msg a {
