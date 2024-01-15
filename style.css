@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+/* TODO: Clear body styles later */
+/* body {
+    background-color: #f3f3f3;
+} */
+
+.flex {
+    display: flex;
+}
+
+/* Navbar */
+.navbar {
+    height: 60px;
+    color: white;
+    background-color: #0f1111;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-left {
+    width: 250px;
+    display: flex;
+    gap: 1rem;
+}
+
+.hover-border:hover {
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+.nav-logo {
+    width: 100px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.nav-logo .logo {
+    background-image: url('images/amazon_logo.png');
+    background-size: cover;
+    height: 55px;
+    width: 100%;
+}
+
+.nav-user-loc {
+    margin-left: 10px;
+    padding: 5px 7px;
+    cursor: pointer;
+    display: flex;
+}
+
+.nav-user-loc .location-icon {
+    padding-top: 17px;
+}
+
+.nav-user-loc .location-details {
+    margin-left: 7px;
+}
+
+.nav-user-loc .location-details .msg {
+    margin-top: 4px;
+    font-size: 0.7rem;
+    color: #cccccc;
+}
+
+.nav-user-loc .location-details .location-name {
+    font-weight: bold;
+    margin-top: -2px;
+}
+
+.nav-search select {
+    height: 40px;
+    width: 50px;
+    text-align: center;
+    background-color: #f3f3f3;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-search input {
+    width: 500px;
+    font-size: 1rem;
+    border: none;
+    padding-left: 20px;
+}
+
+.nav-search i {
+    height: 40px;
+    width: 45px;
+    color: #0f1111;
+    background-color: #febd69;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-search:hover {
+    border-style: inset;
+    border: 2px solid orange;
+    border-radius: 7px;
+}
+
+.nav-search select:focus, .nav-search input:focus, .nav-search i:focus {
+    outline: none;
+}
+
+.nav-user-account {
+    margin-left: 30px;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.nav-user-account p {
+    font-size: small;
+    padding-left: 5px;
+    margin-bottom: -2px;
+}
+
+.nav-user-account select {
+    background: transparent;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.nav-user-orders {
+    margin-left: 10px;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.nav-user-orders .returns {
+    font-size: small;
+    margin-bottom: -2px;
+}
+
+.nav-user-orders .orders {
+    font-weight: bold;
+}
+
+.nav-cart {
+    margin-left: 15px;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Categories Panel (Below Navbar) */
+
+.categories, .all-categories, .category-sections {
+    display: flex;
+}
+
+.category-groups {
+    cursor: pointer;
+    display: flex;
+}
+
+.all-categories {
+    padding: 9px;
+    margin-left: 1.5rem;
+    gap: 0.5rem;
+    font-weight: bold;
+    align-items: center;
+}
+
+.all-categories i {
+    margin-top: 2px;
+}
+
+.category-sections p {
+    padding: 9px;
+}
+
+.categories {
+    background-color: #222f3d;
+    height: 40px;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.category-electronics {
+    cursor: pointer;
+    margin-right: 15px;
+    padding: 9px;
+    font-weight: bold;
+    justify-self: flex-end;
+}
+
+/* Hero Section */
+
+.hero-section {
+    background-image: url('images/hero_image.jpg');
+    background-size: cover;
+    height: 325px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero-section .redirect-msg {
+    width: 97%;
+    height: 40px;
+    color: #0f1111;
+    background-color: #f3f3f3;
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* position: relative;
+    top: 250px; */
+}
+
+.hero-section .redirect-msg a {
+    text-decoration: none;
+    color: #007185;
+}
+
+.hero-section .redirect-msg a:hover {
+    color: #c7511f;
+    text-decoration: underline;
+}
+
+/* Content (Categories) Boxes - Shop Section */
+.shop-section {
+    background-color: #e2e7e6;
+    display: flex;
+    gap: 1.25rem;
+    padding: 20px;
+}
+
+.box {
+    background-color: white;
+    width: 25%;
+    height: 400px;
+    padding: 1.25rem;
+    padding-bottom: 2rem;
+    cursor: pointer;
+}
+
+.box h2 {
+    margin-bottom: 10px;
+}
+
+.box img {
+    width: 100%;
+    height: 80%;
+    margin-bottom: 1rem;
+}
+
+.box a {
+    color: #007185;
+    font-size: 0.9rem;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.row-2 {
+    padding-top: 0px;
+}
+
+/* Sign in - Sign up Block (above footer) */
+.signin-signup {
+    height: 100px;
+    font-size: 0.9rem;
+    text-align: center;
+    
+    margin-top: 50px;
+    margin-bottom: 25px;
+    border: 1px solid #cccccc;
+    border-radius: 2px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.25rem;
+}
+
+.signin-signup .signin-button {
+    width: 250px;
+    font-size: small;
+    font-weight: 700;
+    background-color: rgb(255, 166, 0, 0.8);
+    text-decoration: none;
+    margin: 0px auto;
+    padding: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.signin-signup .new-user {
+    font-size: smaller;
+}
+
+.signin-signup .new-user a {
+    color: #007185;
+    text-decoration: none;
+}
+
+/* Footer */
+.scroll-to-top {
+    height: 50px;
+    background-color: rgb(69, 92, 114);
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+}
+
+.scroll-to-top:hover {
+    background-color: rgb(93, 116, 137);
+}
+
+.scroll-to-top a {
+    color: white;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Footer Links */
+.footer-links {
+    color: #dddddd;
+    background-color: #222f3d;
+    padding: 40px 150px;
+    display: flex;
+    gap: 130px;
+    border-bottom: 1px solid lightgray;
+}
+
+.footer-links .section {
+    width: 200px;
+}
+
+.footer-links .section h3 {
+    color: white;
+    font-size: large;
+    margin-bottom: 15px;
+} 
+
+.footer-links .section a {
+    color: #dddddd;
+    text-decoration: none;
+    display: block;
+    font-size: small;
+    margin-bottom: 10px;
+}
+
+.footer-links .section a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.footer-country-info {
+    background-color: #222f3d;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-country-info .content-box {
+    color: #dddddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-country-info .content-box .nav-logo {
+    margin-right: 5rem;
+}
+
+.footer-country-info .content-box select, .user-currency, .country {
+    color: #dddddd;
+    height: 2rem;
+    font-size: small;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    padding: 0px 10px;
+    background: transparent;
+    margin-right: 10px;
+    margin-top: -10px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+}
+
+.footer-country-info .content-box .country i,
+.footer-country-info .content-box .user-currency i {
+    margin-top: 1px;
+    margin-right: 5px;
+}
+
+/* Copyright Details */
+.terms-and-copyright {
+    font-size: small;
+    height: 100px;
+    color: #cccccc;
+    background: #0f1111;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.terms-and-copyright .terms-privacy-notice {
+    padding-bottom: 0.5rem;
+}
+
+.terms-and-copyright .terms-privacy-notice a {
+    color: #cccccc;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.terms-and-copyright .terms-privacy-notice a:hover {
+    text-decoration: underline;
+}
