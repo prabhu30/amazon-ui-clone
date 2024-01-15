@@ -260,6 +260,7 @@
     height: 400px;
     padding: 1.25rem;
     padding-bottom: 2rem;
+    border-radius: 0.5rem;
     cursor: pointer;
 }
 
@@ -271,6 +272,7 @@
     width: 100%;
     height: 80%;
     margin-bottom: 1rem;
+    border-radius: 0.25rem;
 }
 
 .box a {
